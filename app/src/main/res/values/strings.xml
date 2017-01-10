@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">ViewFlipper</string>
+    <string name="advertisement_title">热议</string>
+    <string name="advertisement_content_one">雅虎公司将改名为Altaba 网友调侃：阿里他爸</string>
+    <string name="advertisement_content_two">微信小程序来了！多数公司抱着“先上船”的心理</string>
+    <string name="advertisement_content_three">网曝格力员工被强制买格力手机 回应：鼓励而已</string>
+    <string name="advertisement_content_four">“绝版三星Note7”炒出高价：二手网站卖8888元</string>
+    <string name="advertisement_content_five">IoT黑板报0110：人机交互成现实 CES展家电迈向智能化</string>
+    <string name="advertisement_content_six">天塌了：Oracle 或许要在 2017 年对 Java SE 收费</string>
+</resources>

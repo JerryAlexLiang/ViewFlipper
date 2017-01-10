@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.liangyang.viewflipper.MainActivity">
+
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/safemode_icon" />
+        <!--ViewFlipper用到的属性
+            android:autoStart：设置自动加载下一个View
+            android:flipInterval：设置View之间切换的时间间隔
+            android:inAnimation：设置切换View的进入动画
+            android:outAnimation：设置切换View的退出动画-->
+        <ViewFlipper
+            android:id="@+id/vf"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:autoStart="true"
+            android:background="#fff"
+            android:flipInterval="3000"
+            android:inAnimation="@anim/anim_viewflipper_in"
+            android:outAnimation="@anim/anim_viewflipper_out" />
+
+    </LinearLayout>
+
+    <!--水平滚动-->
+    <ViewFlipper
+        android:id="@+id/vf_two"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_below="@id/ll"
+        android:autoStart="true"
+        android:background="#fff"
+        android:flipInterval="3000"
+        android:inAnimation="@anim/anim_horizontal_in"
+        android:outAnimation="@anim/anim_horizontal_out" />
+
+
+    <!--水平滚动-->
+    <ViewFlipper
+        android:id="@+id/vf_three"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_below="@id/vf_two"
+        android:autoStart="true"
+        android:background="#fff"
+        android:flipInterval="3000"
+        android:inAnimation="@anim/anim_right_in"
+        android:outAnimation="@anim/anim_right_out" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            android:src="@drawable/bg01" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            android:src="@drawable/bg02" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            android:src="@drawable/bg03" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            android:src="@drawable/bg04" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            android:src="@drawable/bg05" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            android:src="@drawable/bg06" />
+    </ViewFlipper>
+
+
+</RelativeLayout>
